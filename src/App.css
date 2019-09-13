@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 30px;
+  height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-btn {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.log-bg {
+  background-image: url('./components/images/social-3408791.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.loginbox{
+  width: 320px;
+  height: 320px;
+  background: rgb(0, 0, 0, 0.5);
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.avatar {
+  position: absolute;
+  top: -50px;
+ left: calc(50% - 50px);
+ color: white;
+ background-color: grey;
+ border-radius: 120px;
+}
+
+.btn {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.log-title, .check-title {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: bold;
 }

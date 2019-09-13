@@ -1,14 +1,17 @@
-import React from 'react';
-import './App.css';
+import React, {Component} from 'react';
+import Header from './components/Nav/Header';
+import LogIn from './components/Pages/Log-In'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>fanApp</h1>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return(
+      <div>
+        <Header/>
+        <LogIn/>
+
+      </div>
+    )
+  }
 }
 
 export default App;

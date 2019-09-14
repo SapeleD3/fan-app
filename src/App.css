@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
-
+   
 body{
   box-sizing: border-box;
   margin: 0;
@@ -56,3 +56,34 @@ body{
   color: white;
   font-weight: bold;
 }
+
+.signupbox{
+  width: 320px;
+  height: 420px;
+  background: rgb(0, 0, 0, 0.5);
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.topixs {
+  background: blue;
+  border: none;
+  margin-right: 2px;
+  color: white;
+}
+
+.rules{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: white;
+}
+

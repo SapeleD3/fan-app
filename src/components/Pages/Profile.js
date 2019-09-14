@@ -1,27 +1,62 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
+import Icon from '@material-ui/core/Icon';
+import Button from '@material-ui/core/Button';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
+const useStyles = makeStyles({
+	Avatar: {
+	display: "flex",
+	"justify-content": "center",
+    margin: 10,
+    width: 200,
+    height: 200,
+  },
+});
 
-class Profile extends Component {
-  render(){
-    return(
-      <div>
-      	<article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-		  <div class="tc">
-		    <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you"/>
-		    <h1 class="f4">Anonymous007</h1>
-		    <hr class="mw3 bb bw1 b--black-10"/>
-		  </div>
-		  <p class="lh-copy measure center f6 black-70">
-		    Quite affectionate and outgoing.
-		    She loves to get chin scratches and will
-		    roll around on the floor waiting for you give her more of them.
-		  </p>
-		</article>
-        
+function Profile(){
+  	const classes = useStyles();
 
-      </div>
-    )
-  }
+  	return (
+  		<div className='prof-bg'>
+  			<div className="profilecard">
+  				<div className="center">
+	  			<h1>Profile</h1>
+	  			</div>
+	  			<div className="prof-details">
+	  				<div className="center">
+		  				<Avatar 
+		  				id="avat"
+		  				alt="Remy Sharp" 
+		  				src="https://i.forbesimg.com/media/lists/people/jason-derulo_416x416.jpg" 
+		  				className={classes.Avatar}
+		  				/>
+				    </div>
+
+				    <div>
+		  				<h2 className=" f2 center">Mr Richards</h2>
+		  				<span className=" center">
+		  					<Icon>stars</Icon>
+		  					<Icon>stars</Icon>
+		  					<Icon>stars</Icon>
+		  					<Icon>star</Icon>
+		  					<Icon>star</Icon>
+		  				</span>
+		  				<h3 className="center">General DRA-gon</h3>
+		  				<h2 className="center">DieHard Chelsea Fan</h2>
+	  				</div>
+	  				<Button variant="contained" color="default" className={classes.button}>
+					        Edit Profile
+					        <CloudUploadIcon className={classes.rightIcon} />
+					    </Button>
+	  				
+		  		</div>
+
+	  		</div>
+  		</div>
+  		
+  		
+  	);
 }
-
 export default Profile;
